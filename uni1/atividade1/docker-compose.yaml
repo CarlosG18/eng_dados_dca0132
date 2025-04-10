@@ -1,0 +1,35 @@
+services:
+  servidor:
+    container_name: servidor
+    image: carlosg18docker/eng_dados:servertcp
+    tty: true
+    networks:
+      network1:
+        ipv4_address: 172.28.0.2
+
+  cliente1:
+    container_name: cliente1
+    image: carlosg18docker/eng_dados:clienttcp
+    tty: true
+    depends_on:
+      - servidor
+    entrypoint: ["python", "client.py"]
+    command: ["172.28.0.2"]
+    restart: always
+  
+  cliente2:
+    container_name: cliente2
+    image: carlosg18docker/eng_dados:clienttcp
+    tty: true
+    depends_on:
+      - servidor
+    entrypoint: ["python", "client.py"]
+    command: ["172.28.0.2"]
+    restart: always
+
+networks:
+  network1:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
