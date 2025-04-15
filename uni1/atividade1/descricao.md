@@ -37,4 +37,4 @@ Ambas as aplicações estão containerizadas e podem ser executadas simultaneame
 A aplicação está disponível no DockerHub nos links abaixo:
 
 - 🔗 [Servidor](https://hub.docker.com/layers/carlosg18docker/eng_dados/servertcp/images/sha256-1048bff77a0d13faae823d8ded2bf8b23554b960c74e855f53c0b46ae2483ed1)
-- 🔗 [Cliente]([https://dockerhub.com/carlosg18docker/eng_dados:clienttcp](https://hub.docker.com/layers/carlosg18docker/eng_dados/clienttcp/images/sha256-96d045d41d74ef737f2bdd46f4192f922909998805cb6dae1032b88ea19fa417))
+- 🔗 [Cliente]([https://dockerhub.com/carlosg18docker/eng_dados:clienttcp](https://hub.docker.com/layers/carlosg18docker/eng_dados/clienttcp/images/sha256-96d045d41d74ef737f2bdd46f4192f922909998805cb6dae1032b88ea19fa417)
