@@ -11,6 +11,10 @@
 
 ## 🚀 Unidade I
 
+Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Dados**, entendendo seu papel no ciclo de vida dos dados e sua importância no cenário atual. Também iniciamos o uso de ferramentas práticas, com foco em containers usando **Docker**. Aprendemos conceitos básicos como imagens, containers e comandos essenciais, preparando o terreno para a criação de ambientes reprodutíveis e escaláveis que serão utilizados ao longo do curso.
+
+- 📑 Anotações sobre [DockerCompose](./uni1/notes_docker.md)
+
 ### 🎯 Atividades/projetos
 
 - [📌 Atividade 1 - Criação de Imagens e Containers Docker](./uni1/atividade1/descricao.md)
