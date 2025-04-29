@@ -19,6 +19,7 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 ### 🎯 Atividades/projetos
 
 - [📌 Atividade 1 - Criação de Imagens e Containers Docker](./uni1/atividade1/descricao.md)
+- [📌 Atividade 2 - Programando MapReduce em Hadoop](./uni1/atividade2/descricao.md)
 
 ## 🚀 Unidade II
 
