@@ -31,20 +31,15 @@ for line in sys.stdin:
   if word == curr_word:
     curr_count += count
   else:
-    
-    # Write word and its number of occurrences as a key-value
-    # pair to stdout
     if curr_word:
       palavras.append({
         "palavra": curr_word,
         "cont": curr_count
       })
-      #print ('{0}\t{1}'.format(curr_word, curr_count))
     curr_word = word
     curr_count = count
-# Output the count for the last word
-#if curr_word == word:
-  #print ('{0}\t{1}'.format(curr_word, curr_count))
+
+# ordenando em ordem decrescente as palavras pela key "cont" do dicionario
 ordenado = sorted(palavras, key=lambda x: x['cont'], reverse=True)
 
 for elemento in ordenado:

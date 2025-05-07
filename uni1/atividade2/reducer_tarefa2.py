@@ -15,26 +15,34 @@
 
 #!/usr/bin/env python
 import sys
-curr_word = None
+curr_ip = None
 curr_count = 0
+ips = []
+
 # Process each key-value pair from the mapper
 for line in sys.stdin:
   # Get the key and value from the current line
-  word, count = line.split('\t')
+  ip, count = line.split('\t')
   # Convert the count to an int
   count = int(count)
   # If the current word is the same as the previous word,
   # increment its count, otherwise print the words count
   # to stdout
-  if word == curr_word:
+  if ip == curr_ip:
     curr_count += count
   else:
-    # Write word and its number of occurrences as a key-value
-    # pair to stdout
-    if curr_word:
-      print ('{0}\t{1}'.format(curr_word, curr_count))
-    curr_word = word
+    if curr_ip:
+      # adicionando o dict de ip e cont na lista de ips
+      ips.append({
+        "ip": curr_ip,
+        "cont": curr_count
+      })
+    curr_ip = ip
     curr_count = count
-# Output the count for the last word
-if curr_word == word:
-  print ('{0}\t{1}'.format(curr_word, curr_count))
+
+# ordenando em ordem decrescente as palavras pela key "cont" do dicionario
+ordenado = sorted(ips, key=lambda x: x['cont'], reverse=True)
+
+# printando os ips na ordem descrecente de acesso
+for elemento in ordenado:
+  print(f'{elemento["ip"]} {elemento["cont"]}')
