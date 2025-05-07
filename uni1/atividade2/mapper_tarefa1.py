@@ -15,6 +15,10 @@
 
 #!/usr/bin/env python
 import sys
+import io
+
+# decodificando as palavras para o padrão utf-8
+sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 
 # criamos uma lista vazia para adicionar as palavras e depois realizar a ordenação com todas as palavras
 words_list = []
