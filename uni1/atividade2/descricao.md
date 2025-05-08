@@ -48,30 +48,29 @@ Ambas as tarefas utilizam scripts Python (`mapper.py` e `reducer.py`) customizad
   * A saída final deve estar em **ordem decrescente de acessos**
 
 ## ▶️ Como Executar no Hadoop
+ > Os arquivos bases `texto.txt` e `access.log.new` deve esta no volume **my_files** além do script mapper e reduce, devem esta dentro do container do hadoop-master.
 
 1. **Subir arquivos para o HDFS:**
 
    ```bash
-   hdfs dfs -put texto.txt /user/seu_usuario/
-   hdfs dfs -put access.log.new /user/seu_usuario/
+   hdfs dfs -put texto.txt
+   hdfs dfs -put access.log.new
    ```
 
-2. **Executar a tarefa no cluster:**
+2. **Executar a tarefa 1 no cluster:**
 
    ```bash
-   hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
-     -input /user/seu_usuario/texto.txt \
-     -output /user/seu_usuario/saida_tarefa1 \
-     -mapper mapper_tarefa1.py \
-     -reducer reducer_tarefa1.py \
-     -file mapper_tarefa1.py \
-     -file reducer_tarefa1.py
+   yarn jar ${HADOOP_HOME}/share/hadoop/tools/lib/hadoop-streaming*.jar -files mapper_tarefa1.py,reducer_tarefa1.py -mapper "python mapper_tarefa1.py" -reducer "python reducer_tarefa1.py" -input access.log.new -output output-ip
    ```
 
-   *(Adapte os caminhos para a Tarefa 2 conforme necessário.)*
-
-3. **Visualizar o resultado:**
+3. **Executar a tarefa 2 no cluster:**
 
    ```bash
-   hdfs dfs -cat /user/seu_usuario/saida_tarefa1/part-00000
+   yarn jar ${HADOOP_HOME}/share/hadoop/tools/lib/hadoop-streaming*.jar -files mapper_tarefa2.py,reducer_tarefa2.py -mapper "python mapper_tarefa2.py" -reducer "python reducer_tarefa2.py" -input access.log.new -output output-ip
+   ```
+
+4. **Visualizar o resultado:**
+
+   ```bash
+   hdfs dfs -cat <saida que voce colocou>/*
    ```
