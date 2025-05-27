@@ -24,6 +24,8 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 
 ## 🚀 Unidade II
 
+- 📑 Anotações sobre [Dataframes](./uni2/dataframes.md)
+
 ### 🎯 Atividades/projetos
 
 - [📌 Atividade 2](./uni2/atividade1.md)
