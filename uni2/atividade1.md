@@ -1,1 +1,2 @@
-# Atividade 1
+# Atividade 4 - Trabalhando com dados do Banco de dados com o PySpark
+
