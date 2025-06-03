@@ -28,7 +28,7 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 
 ### 🎯 Atividades/projetos
 
-- [📌 Atividade 2](./uni2/atividade1.md)
+- [📌 Atividade 4 - Trabalhando com dados do Banco de dados com o PySpark](./uni2/atividade1.md)
 
 ## 🚀 Unidade III
 
