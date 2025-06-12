@@ -25,10 +25,12 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 ## 🚀 Unidade II
 
 - 📑 Anotações sobre [Dataframes](./uni2/dataframes.md)
+- 📑 Anotações sobre [MongoDB](./uni2/mongodb.md)
 
 ### 🎯 Atividades/projetos
 
 - [📌 Atividade 4 - Trabalhando com dados do Banco de dados com o PySpark](./uni2/atividade1.md)
+- [📌 Atividade 5 - Trabalhando com o MongoDB com o PySpark](./uni2/atividade2.md)
 
 ## 🚀 Unidade III
 
