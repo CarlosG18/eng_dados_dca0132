@@ -29,8 +29,8 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 
 ### 🎯 Atividades/projetos
 
-- [📌 Atividade 4 - Trabalhando com dados do Banco de dados com o PySpark](./uni2/atividade1.md)
-- [📌 Atividade 5 - Trabalhando com o MongoDB com o PySpark](./uni2/atividade2.md)
+- [📌 Atividade 4 - Trabalhando com dados do Banco de dados com o PySpark](./uni2/atividade1/atividade1.md)
+- [📌 Atividade 5 - Trabalhando com o MongoDB com o PySpark](./uni2/atividade2/atividade2.md)
 
 ## 🚀 Unidade III
 
