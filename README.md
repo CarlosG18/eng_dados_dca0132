@@ -34,6 +34,8 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 
 ## 🚀 Unidade III
 
+- 📑 Anotações sobre [Spark Streaming](./uni3/streaming.md)
+
 ### 🎯 Atividades/projetos
 
 - [📌 Atividade 3](./uni3/atividade1.md)
