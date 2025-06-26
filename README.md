@@ -35,6 +35,7 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 ## 🚀 Unidade III
 
 - 📑 Anotações sobre [Spark Streaming](./uni3/streaming.md)
+- 📑 Anotações sobre [Apache Kafka](./uni3/kafka.md)
 
 ### 🎯 Atividades/projetos
 
