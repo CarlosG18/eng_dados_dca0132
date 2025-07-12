@@ -39,7 +39,7 @@ Nesta primeira unidade, fomos introduzidos aos **fundamentos da Engenharia de Da
 
 ### 🎯 Atividades/projetos
 
-- [📌 Atividade 3](./uni3/atividade1.md)
+- [📌 Atividade 6 - Consumindo dados com Spark Streaming a partir de um banco de dados MongoDB](./uni3/atividade1.md)
 
 ## 🛠️ Projeto Final
 
