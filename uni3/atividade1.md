@@ -187,7 +187,7 @@ Resposta esperada:
 #### Apache Spark
 
 * Acessar o Jupyter Notebook em `http://127.0.0.1:8888/`.
-* Abrir o [notebook da aplicação Spark Streaming](uni3/spark-streaming.ipynb). 
+* Abrir o [notebook da aplicação Spark Streaming](spark-streaming.ipynb). 
 * Inserir dados na coleção MongoDB e observar o processamento em tempo real no notebook.
 
 ---
